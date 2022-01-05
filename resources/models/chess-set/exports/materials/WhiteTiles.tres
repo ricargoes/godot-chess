@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d20pxnu7qagv1"]
+
+[resource]
+resource_name = "WhiteTiles"
+cull_mode = 2
+vertex_color_use_as_albedo = true

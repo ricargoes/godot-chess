@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c3mbmen2qav5q"]
+
+[resource]
+resource_name = "BlackTiles"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.0802046, 0, 0.00233292, 1)
+roughness = 0.0

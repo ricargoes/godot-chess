@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dtp30t3mlqyeh"]
+
+[resource]
+resource_name = "WhitePieces"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.906332, 0.89353, 0.802608, 1)
+roughness = 0.5

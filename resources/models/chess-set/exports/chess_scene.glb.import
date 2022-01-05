@@ -1,0 +1,85 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bp0vy55x65a1p"
+path="res://.godot/imported/chess_scene.glb-7fb66f00ccdd7adffee6e11defe151e9.scn"
+
+[deps]
+
+source_file="res://resources/models/chess-set/exports/chess_scene.glb"
+dest_files=["res://.godot/imported/chess_scene.glb-7fb66f00ccdd7adffee6e11defe151e9.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=2
+meshes/lightmap_texel_size=0.1
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+import_script/path=""
+_subresources={
+"materials": {
+"BlackPieces": {
+"use_external/enabled": true,
+"use_external/path": "res://resources/models/chess-set/exports/materials/BlackPieces.tres"
+},
+"BlackTiles": {
+"use_external/enabled": true,
+"use_external/path": "res://resources/models/chess-set/exports/materials/BlackTiles.tres"
+},
+"WhitePieces": {
+"use_external/enabled": true,
+"use_external/path": "res://resources/models/chess-set/exports/materials/WhitePieces.tres"
+},
+"WhiteTiles": {
+"use_external/enabled": true,
+"use_external/path": "res://resources/models/chess-set/exports/materials/WhiteTiles.tres"
+},
+"Wood": {
+"use_external/enabled": true,
+"use_external/path": "res://resources/models/chess-set/exports/materials/Wood.tres"
+}
+},
+"meshes": {
+"chess_scene_Bishop": {
+"save_to_file/enabled": true,
+"save_to_file/path": "res://resources/models/chess-set/exports/meshes/chess_scene_Bishop.res"
+},
+"chess_scene_ChessBoard": {
+"save_to_file/enabled": true,
+"save_to_file/path": "res://resources/models/chess-set/exports/meshes/chess_scene_ChessBoard.res"
+},
+"chess_scene_King": {
+"save_to_file/enabled": true,
+"save_to_file/path": "res://resources/models/chess-set/exports/meshes/chess_scene_King.res"
+},
+"chess_scene_Knight": {
+"save_to_file/enabled": true,
+"save_to_file/path": "res://resources/models/chess-set/exports/meshes/chess_scene_Knight.res"
+},
+"chess_scene_Pawn": {
+"save_to_file/enabled": true,
+"save_to_file/path": "res://resources/models/chess-set/exports/meshes/chess_scene_Pawn.res"
+},
+"chess_scene_Queen": {
+"save_to_file/enabled": true,
+"save_to_file/path": "res://resources/models/chess-set/exports/meshes/chess_scene_Queen.res"
+},
+"chess_scene_Rook": {
+"save_to_file/enabled": true,
+"save_to_file/path": "res://resources/models/chess-set/exports/meshes/chess_scene_Rook.res"
+},
+"chess_scene_Support": {
+"save_to_file/enabled": true,
+"save_to_file/path": "res://resources/models/chess-set/exports/meshes/chess_scene_Support.res"
+}
+}
+}

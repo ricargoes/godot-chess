@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ha3c4bmshnsi"]
+
+[ext_resource type="ArrayMesh" uid="uid://de6kb0p744dis" path="res://resources/models/chess-set/exports/meshes/chess_scene_ChessBoard.res" id="1_g1doo"]
+[ext_resource type="Script" path="res://scenes/Board.gd" id="2_csdpp"]
+
+[node name="Board" type="MeshInstance3D"]
+mesh = ExtResource( "1_g1doo" )
+surface_material_override/0 = null
+surface_material_override/1 = null
+script = ExtResource( "2_csdpp" )
+
+[node name="Tiles" type="Node3D" parent="."]
+
+[node name="Pieces" type="Node3D" parent="."]

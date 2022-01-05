@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfq56qxyil83p"]
+
+[ext_resource type="Material" uid="uid://bgwjjcvfd1vyt" path="res://resources/materials/TileHighlight.tres" id="1_lb51k"]
+[ext_resource type="Script" path="res://scenes/Tile.gd" id="2_5r2pr"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_u02r8"]
+material = ExtResource( "1_lb51k" )
+size = Vector2(0.06, 0.06)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_038py"]
+points = PackedVector3Array(-0.0304702, -0.0304702, -0.000476097, 0.0304702, 0.0304702, 0.000476097, 0.0304702, 0.0304702, -0.000476097, -0.0304702, 0.0304702, 0.000476097, 0.0304702, -0.0304702, 0.000476097, 0.0304702, -0.0304702, -0.000476097, -0.0304702, 0.0304702, -0.000476097, -0.0304702, -0.0304702, 0.000476097)
+
+[node name="Tile" type="Area3D"]
+script = ExtResource( "2_5r2pr" )
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
+mesh = SubResource( "QuadMesh_u02r8" )
+surface_material_override/0 = null
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
+shape = SubResource( "ConvexPolygonShape3D_038py" )

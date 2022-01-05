@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn1dyowfs6d7w"]
+
+[ext_resource type="PackedScene" uid="uid://ha3c4bmshnsi" path="res://scenes/Board.tscn" id="1_cmrsy"]
+[ext_resource type="Script" path="res://scenes/Game.gd" id="1_p4x7g"]
+[ext_resource type="ArrayMesh" uid="uid://bl32qrm1fs6dg" path="res://resources/models/chess-set/exports/meshes/chess_scene_Support.res" id="2_jihkn"]
+
+[node name="Game" type="Node3D"]
+script = ExtResource( "1_p4x7g" )
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="FreeCamera" type="Camera3D" parent="Pivot"]
+transform = Transform3D(-1, 6.18172e-08, -6.18172e-08, 0, 0.707106, 0.707107, 8.74228e-08, 0.707107, -0.707106, 0, 0.3, -0.45)
+current = true
+
+[node name="Board" parent="." instance=ExtResource( "1_cmrsy" )]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource( "2_jihkn" )
+surface_material_override/0 = null
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35759, 0.183156, 0.229672)
+
+[node name="TopView" type="Camera3D" parent="."]
+transform = Transform3D(-1, 8.74228e-08, 0, 0, 0, 1, 8.74228e-08, 1, 0, 0, 0.5, 0)
+
+[node name="UI" type="VBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+rect_min_size = Vector2(300, 0)
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Turn" type="TextEdit" parent="UI"]
+offset_right = 300.0
+offset_bottom = 40.0
+rect_min_size = Vector2(0, 40)
+theme_override_font_sizes/font_size = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="State" type="TextEdit" parent="UI"]
+offset_top = 44.0
+offset_right = 300.0
+offset_bottom = 84.0
+rect_min_size = Vector2(0, 40)
+theme_override_font_sizes/font_size = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="check" from="Board" to="." method="_on_Board_check"]
+[connection signal="new_turn" from="Board" to="." method="_on_Board_new_turn"]

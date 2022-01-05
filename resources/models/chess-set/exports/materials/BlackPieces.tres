@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b0ihv0uyg4g83"]
+
+[resource]
+resource_name = "BlackPieces"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.203195, 0.167489, 0.151653, 1)
+roughness = 0.3
